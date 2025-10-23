@@ -1,0 +1,26 @@
+def main():
+    positivos = 0
+    negativos = 0
+
+    print("Ingrese números (0 para terminar).")
+    while True:
+        try:
+            n = float(input("Número: "))
+        except ValueError:
+            print("Entrada no válida. Intente de nuevo.")
+            continue
+
+        if n == 0:
+            break
+        if n > 0:
+            positivos += 1
+        else:
+            negativos += 1
+
+    print(f"\nResultados:")
+    print(f"Números positivos: {positivos}")
+    print(f"Números negativos: {negativos}")
+
+if __name__ == "__main__":
+    main()
+# — Mini Matthew

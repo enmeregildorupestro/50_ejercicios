@@ -3,3 +3,126 @@ base = float(input("ingresar un numero"))
 altura = float(input("ingresar un numero"))
 area = (base * altura) / 2
 print("el area del triangulo es:", area)
+import math
+
+def area_triangulo():
+    base = float(input("Ingrese la base: "))
+    altura = float(input("Ingrese la altura: "))
+    print("Área del triángulo:", (base * altura) / 2)
+
+def area_perimetro_circulo():
+    radio = float(input("Ingrese el radio: "))
+    area = math.pi * (radio ** 2)
+    perimetro = 2 * math.pi * radio
+    print("Área:", area)
+    print("Perímetro:", perimetro)
+
+def celsius_a_fahrenheit():
+    c = float(input("Grados Celsius: "))
+    f = (c * 9/5) + 32
+    print("Equivalen a:", f, "°F")
+
+def sumar_dos_numeros():
+    a = float(input("Primer número: "))
+    b = float(input("Segundo número: "))
+    print("La suma es:", a + b)
+
+def par_o_impar():
+    num = int(input("Ingrese un número: "))
+    if num % 2 == 0:
+        print("El número es par")
+    else:
+        print("El número es impar")
+
+def doble_y_triple():
+    num = float(input("Número: "))
+    print("Doble:", num * 2)
+    print("Triple:", num * 3)
+
+def intercambiar_valores():
+    a = input("Ingrese A: ")
+    b = input("Ingrese B: ")
+    a, b = b, a
+    print("Ahora A vale:", a)
+    print("Ahora B vale:", b)
+
+def positivo_negativo_cero():
+    num = float(input("Ingrese un número: "))
+    if num > 0:
+        print("Positivo")
+    elif num < 0:
+        print("Negativo")
+    else:
+        print("Cero")
+
+def calcular_edad():
+    nacimiento = int(input("Año de nacimiento: "))
+    anio_actual = 2025
+    print("Edad:", anio_actual - nacimiento, "años")
+
+def promedio_tres_notas():
+    n1 = float(input("Nota 1: "))
+    n2 = float(input("Nota 2: "))
+    n3 = float(input("Nota 3: "))
+    print("Promedio:", (n1 + n2 + n3) / 3)
+
+def mayor_de_dos():
+    a = float(input("Número 1: "))
+    b = float(input("Número 2: "))
+    print("El mayor es:", max(a, b))
+
+def menor_de_tres():
+    a = float(input("Número 1: "))
+    b = float(input("Número 2: "))
+    c = float(input("Número 3: "))
+    print("El menor es:", min(a, b, c))
+
+def cuadrado_y_cubo():
+    num = float(input("Número: "))
+    print("Cuadrado:", num ** 2)
+    print("Cubo:", num ** 3)
+
+def descuento_15():
+    precio = float(input("Valor de la compra: "))
+    descuento = precio * 0.15
+    total = precio - descuento
+    print("Descuento:", descuento)
+    print("Total a pagar:", total)
+
+def area_rectangulo():
+    base = float(input("Base: "))
+    altura = float(input("Altura: "))
+    print("Área del rectángulo:", base * altura)
+
+def menu():
+    while True:
+        print("\n=== MENÚ DE EJERCICIOS BÁSICOS SENA ===")
+        print("1. Área de un triángulo")
+        print("2. Área y perímetro de un círculo")
+        print("3. Convertir Celsius a Fahrenheit")
+        print("4. Sumar dos números")
+        print("5. Número par o impar")
+        print("6. Doble y triple de un número")
+        print("7. Intercambiar valores")
+        print("8. Positivo, negativo o cero")
+        print("9. Calcular edad")
+        print("10. Promedio de 3 notas")
+        print("11. Mayor de dos números")
+        print("12. Menor de tres números")
+        print("13. Cuadrado y cubo de un número")
+        print("14. Descuento del 15%")
+        print("15. Área de un rectángulo")
+        print("0. Salir")
+        
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1": area_triangulo()
+        elif opcion == "2": area_perimetro_circulo()
+        elif opcion == "3": celsius_a_fahrenheit()
+        elif opcion == "4": sumar_dos_numeros()
+        elif opcion == "5": par_o_impar()
+        elif opcion == "6": doble_y_triple()
+        elif opcion == "7": intercambiar_valores()
+        elif opcion == "8": positivo_negativo_cero()
+        elif opcion == "9": calcular_edad()
+        elif opcion == "10":calcular_edad()

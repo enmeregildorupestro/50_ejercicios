@@ -1,0 +1,4 @@
+tarifa = float(input("Ingrese la tarifa por minuto: "))
+minutos = float(input("Ingrese la duración de la llamada en minutos: "))
+costo = tarifa * minutos
+print("El costo total de la llamada es:", costo)
