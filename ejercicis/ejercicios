@@ -1,0 +1,5 @@
+#area de un triangulo = base x altura /2
+base = float(input("ingresar un numero"))
+altura = float(input("ingresar un numero"))
+area = (base * altura) / 2
+print("el area del triangulo es:", area)
